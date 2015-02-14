@@ -1,6 +1,6 @@
 {
   "name": "dinosaurs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a list of common dinosaur names",
   "main": "index.js",
   "scripts": {
