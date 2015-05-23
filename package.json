@@ -4,7 +4,7 @@
   "description": "a list of common dinosaur names",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/jden/dinosaurs/issues"
   },
-  "homepage": "https://github.com/jden/dinosaurs"
+  "homepage": "https://github.com/jden/dinosaurs",
+  "devDependencies": {
+    "standard": "^3.11.0"
+  },
+  "standard": {
+    "ignore": [
+      "scrape.js"
+    ]
+  }
 }

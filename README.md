@@ -5,6 +5,8 @@ a list of common dinosaur names
 
 ![](http://fc07.deviantart.net/fs70/f/2013/027/7/4/the_dinosaur_that_nommed____by_kelenkenwithfangs-d5syc2v.gif)
 
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## installation
 
 btw, yeah, you can `> npm install dinosaurs`
