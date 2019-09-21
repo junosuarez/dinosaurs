@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/jden/dinosaurs",
   "devDependencies": {
-    "standard": "^3.11.0"
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
+    "standard": "^14.3.1"
   },
   "standard": {
     "ignore": [

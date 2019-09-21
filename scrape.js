@@ -1,7 +1,15 @@
-// run in chrome dev tools on http://www.dinodictionary.com/azdict_index.asp
+// Run with node and capture output then match with existing list.
 
-copy(
-  [].slice.call(document.querySelectorAll('#list' /* lots of the same ids, don't ask */))
-    .map(function (x) { return x.textContent.toLowerCase().trim() })
-    .join('\n')
-  )
+const $ = require('cheerio')
+const request = require('request');
+
+request('https://en.wikipedia.org/wiki/List_of_dinosaur_genera', function (error, response, body) {
+  if (error) return console.error(error)
+  const parsedHTML = $.load(body)
+  parsedHTML('li').map(function(i, listItem) {
+    let links = $('a', listItem);
+    // Ignore nomen nudum, preoccupied and other uncertain names.
+    if (links.length !== 1) return;
+    console.log($(links[0]).text().toLowerCase());
+  })
+});
